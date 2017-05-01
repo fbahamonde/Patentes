@@ -5,20 +5,15 @@ import base64
 import json
 from googleapiclient import discovery
 from oauth2client.client import GoogleCredentials
-import re, string
 import Drawing as dr
 import Correction as cor
-
-
-
-
 
 showSteps = False
 
 
 ###################################################################################################
 def main():
-    imgOriginalScene  = cv2.imread("rojo.jpg")               # open image
+    imgOriginalScene  = cv2.imread("lejos.jpg")               # open image
     if imgOriginalScene is None:                            # if image was not read successfully
         print "\nerror: image not read from file \n\n"      # print error message to std out
         os.system("pause")                                  # pause so user can see error message
